@@ -1,0 +1,30 @@
+{
+  "name": "@shad/react-authorization",
+  "version": "0.0.1",
+  "description": "Package to simplify Precision-Based Access Control (PBAC) authorization in your react application",
+  "main": "index.js",
+  "repository": "https://github.com/fernan-x/react-authorization",
+  "author": "Fabien FERNANDES ALVES",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@repo/typescript-config": "*"
+  }
+}

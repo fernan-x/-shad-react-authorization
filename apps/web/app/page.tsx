@@ -1,6 +1,8 @@
+'use client';
+
 import Image from "next/image";
-import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { Button } from "@shad/react-authorization";
 
 export default function Home() {
   return (
@@ -46,9 +48,10 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="web" className={styles.secondary}>
+        <button className={styles.secondary}>
           Open alert
-        </Button>
+        </button>
+        <Button />
       </main>
       <footer className={styles.footer}>
         <a
