@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Button } from "@shad/react-authorization";
 
 export default function Home() {
   return (
@@ -51,7 +50,6 @@ export default function Home() {
         <button className={styles.secondary}>
           Open alert
         </button>
-        <Button />
       </main>
       <footer className={styles.footer}>
         <a
