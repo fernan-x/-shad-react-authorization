@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
+import Component from "./component";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
+        <Component />
         <div className={styles.ctas}>
           <a
             className={styles.primary}

@@ -22,7 +22,7 @@
     "build": "tsc",
     "dev": "tsc --watch"
   },
-  "peerDependencies": {
+  "dependencies": {
     "react": "^18.3.1"
   },
   "devDependencies": {

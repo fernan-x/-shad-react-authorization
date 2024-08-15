@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { AuthorizationContextProvider } from "@shad/react-authorization";
-import { POLICIES } from "./policies";
+import { Providers } from "./providers";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <AuthorizationContextProvider value={{ policies: POLICIES }}>
+        <Providers>
           {children}
-        </AuthorizationContextProvider>
+        </Providers>
       </body>
     </html>
   );
