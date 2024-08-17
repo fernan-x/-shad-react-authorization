@@ -1,7 +1,7 @@
-import Authorization from './Authorization';
+import Authorization from './components/Authorization';
 import { AuthorizationContext, useAuthorization, AuthorizationContextProvider, AuthorizationContextConsumer } from './context/AuthorizationContext';
 
-export type { POLICIES } from './types';
+export * from './types';
 
 export {
     Authorization ,
