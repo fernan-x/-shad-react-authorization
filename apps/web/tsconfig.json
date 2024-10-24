@@ -5,7 +5,11 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/features/*": ["app/features/*"],
+    }
   },
   "include": [
     "next-env.d.ts",

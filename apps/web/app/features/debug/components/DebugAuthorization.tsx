@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { Authorization } from '@shad/react-authorization';
-import { AVAILABLE_POLICIES } from './policies';
+import { AVAILABLE_POLICIES } from '@/features/authorization';
 
-const Component = () => {
+const DebugAuthorization = () => {
     const policyArgs = { user: { id: '123', name: 'Fabien' }, other: { foo: 'bar', bar: 'baz' } };
     return <div>
         <h1>Debug policies</h1>
@@ -26,4 +26,4 @@ const Component = () => {
     </div>;
 };
 
-export default Component;
+export default DebugAuthorization;

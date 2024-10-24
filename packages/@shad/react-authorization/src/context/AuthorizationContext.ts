@@ -16,7 +16,7 @@ export const useAuthorization = <KEYS extends string, ARGS>() => {
     const context = useContext<AuthorizationContextType<KEYS, ARGS>>(AuthorizationContext);
     if (!context) {
         throw new Error(
-            "useAuthorization must be used within a AuthorizationContextProvider"
+            "[@shad/react-authorization] The hook useAuthorization must be used within an AuthorizationContextProvider"
         );
     }
     return context;

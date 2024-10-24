@@ -15,8 +15,8 @@ type POLICIES_ARGS = {
 }
 
 const AVAILABLE_POLICIES = {
-    ACCESS_DASHBOARD: 'dashboard:access',
-    ACCESS_ADMIN_PANEL: 'admin_panel:access',
+    ACCESS_DASHBOARD: 'access:dashboard:',
+    ACCESS_ADMIN_PANEL: 'access:admin_panel',
     NOTE_VIEW: 'note:view',
     NOTE_EDIT: 'note:edit',
     NOTE_DELETE: 'note:delete',
